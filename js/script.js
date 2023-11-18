@@ -47,6 +47,7 @@ $(document).ready(() => {
             $("#card").text(words[current - 1]);
             if (answers[current - 1] == -1) $("#card").css("background-color", "#ff6969");
             else if (answers[current - 1] == 1) $("#card").css("background-color", "#48ff48");
+            else $("#card").css("background-color", "white");
         }
     })
 
@@ -56,6 +57,7 @@ $(document).ready(() => {
             $("#card").text(words[current - 1]);
             if (answers[current - 1] == -1) $("#card").css("background-color", "#ff6969");
             else if (answers[current - 1] == 1) $("#card").css("background-color", "#48ff48");
+            else $("#card").css("background-color", "white");
         }
     })
 }) 
