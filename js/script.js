@@ -59,5 +59,7 @@ $(document).ready(() => {
             else if (answers[current - 1] == 1) $("#card").css("background-color", "#48ff48");
             else $("#card").css("background-color", "white");
         }
+        else if (current == 10 && answers.every( (item) => item != 0 ))
+            alert(`You have ${correct} correct and ${wrong} wrong answers.`);
     })
 }) 
